@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compartible" content="IE-edge">
+        <meta name="viewport" content="width-device-width, initial-scale-1.0">
+        <title>Neha Dabeeru Portfolio</title>
+        <link rel="stylesheet" href="style.css">  
+        <script src="https://kit.fontawesome.com/a4a9b0e9fd.js" crossorigin="anonymous"></script>   
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>   
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" class="logo">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#portfolio">Projects</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <h1>Heyy! My name is Neha.</h1>
+                </div>
+                <button onClick="clicking()" class="btn btn-cv">PORTFOLIO</button>
+            </div>
+        </div>
+        <div id="body-info">
+    <!-- -----------------EDUCATION------------------ -->
+    <div id="education">
+        <div class="skill-eduction container">
+            <h1 class="sub-title">EDUCATION</h1>
+            <div class="education-list">
+                    <div class="edu-content">
+                        <h3>GRADUATE</h3>
+                            <div style="margin-bottom: 10px;"><b>MASTER OF SCIENCE</b></div>
+                            <div style="margin-bottom: 10px;">Data Analytics</div>
+                            <div style="margin-bottom: 10px;">San Jose State University</div>
+                            <div style="margin-bottom: 10px;">GPA: 3.466/4.00</div>
+                    </div>         
+                
+                    <div class="edu-content">
+                        <h3>UNDERGRADUATE</h3>
+                        <div style="margin-bottom: 10px;"><b>BACHELOR OF TECHNOLOGY</b></div>
+                        <div style="margin-bottom: 10px;">Computer Science and Engineering</div>
+                        <div style="margin-bottom: 10px;">SRM University</div>
+                        <div style="margin-bottom: 10px;">First Class with Distinction</div>
+                    </div>
+                
+                    <div class="edu-content">
+                        <h3>CERTIFICATION</h3>
+                        <div style="margin-bottom: 10px;">Microsoft Technology Associate - Networking Fundamentals (MTA) - Credential ID Q5AP-FVpy</div>
+                    </div>
+            </div>
+        </div>            
+    </div>
+    <!-- -----------------PORTFOLIO------------------ -->
+         <div id="portfolio">
+            <div class="portfolio container">
+                <h1 class="sub-title">MY RECENT PROJECT</h1>
+                <div class="work-list">
+                    <div class="work-item">
+                        <div class="work-info">
+                            <h1> GUN VIOLENCE ANALYSIS IN THE USA </h1>
+                            <h4>Snowflake Data Warehouse Design and Performance for Gun Violence</h4>
+                            <p>The primary objective of this project is to extract valuable insights from the selected dataset utilizing the Snowflake data warehousing technology. The databases used for analysis are RDBMS, MongoDB and Redis. The result of the analysis is visualized using Tableau. </p>
+                                <a href="https://github.com/pooja-manjunatha/Gun-Violence" target="_blank"><b>CLICK ON THIS LINK TO VIEW GITHUB REPOSITORY</b><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                        <div class="work-img">
+                            <img src="images/work1.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="work-item">
+                        <div class="work-info">
+                            <h1>STOCK PREDICTION MODEL</h1>
+                            <h4><i>Published in International Journal for Innovative Technology and Exploring Engineering, June 2020.</i></h4>
+                            <p>The project aims to process large volumes of real-time NYSE and NASDAQ data and build a time-series model in python that would run thorough regression algorithms on them with interactions, to give precise stock predictions. Published in the International Journal for Innovative Technology and Exploring Engineering; ISSN 2278-3075, Vol-9 Issue-9</p>
+                            <a href="https://www.ijitee.org/wp-content/uploads/papers/v9i9/I7642079920.pdf" target="_blank"><b>CLICK ON THIS LINK TO DOWNLOAD PAPER</b><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                        <div class="work-img">
+                            <img src="images/work2.gif" alt="">
+                        </div>
+                    </div>
+
+                    <div class="work-item">
+                        <div class="work-info">
+                            <h1>PHARMACY MANAGEMENT SYSTEM </h1>
+                            <p>In the project, pharmacy management system, the users can update their inventory seamlessly and generate invoices and receipts using TCPDF. Records once updated into the database are replicated (to the backend) to avoid any unwanted data loss. The project is developed using PHP scripting language. It includes absolute support for UTF-8 Unicode, bi-directional algorithm, and right-to-left languages.</p>
+                        </div>
+                        <div class="work-img">
+                            <img src="images/work3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+         </div>
+    <!-- -----------------ABOUT------------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/me.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">ABOUT ME</h1>
+                    <p class="about-para">I am a motivated and ambitious student pursuing a Master's degree in Data Analytics at San Jose State University (SJSU). With a passion for harnessing the power of data to drive strategic decision-making, I am actively seeking internship opportunities in 2024 to further develop my skills and contribute to real-world projects.</p>
+                    <a href="images/neha resume.pdf" download class="btn btn-cv">Download CV</a>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>Typescript, JavaScript, PHP, HTML5, CSS3, C++, Object-Oriented Programming (OOP) with Java and Python.</li>
+                        <li><span>Tools and Frameworks</span><br>Angular, GIT, Bootstrap, Vue.js, Spring Boot IDE: CodeBlocks, Eclipse, Jupyter notebook, Visual Studio Code </li>
+                        <li><span>Databases and DataWarehouse</span><br>MySQL, PostgreSQL, MongoDB, Redis, Snowflakes</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>June 2020 – Dec 2022</span><br>Software Engineer, Bank of America, Chennai, India</li>
+                        <li><span>Dec 2018 – Jan 2019</span><br>Internship, Flsmidth & amp; Co. A/S, Chennai, India</li>
+                        <li><span>May 2018 – June 2018</span><br>Internship, Rashtriya Ispat Nigam Limited Visakhapatnam, Visakhapatnam, India</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------CONTACT------------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">CONTACT ME</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> nehadabeeru4@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+1 240-386 (0822)</p>
+                    <div class="social-icon">
+                        <a href="https://m.facebook.com/people/Neha-Dabeeru/100011794412420/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/neha-dabeeru-97660b190/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/neha_dabeeru/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your EmailID" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-cv">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        function clicking(){
+          position = document.getElementById('about');
+          position.scrollIntoView();
+        }        
+    </script>
+    <script>
+        $(document).ready(function(){
+    $(this).scrollTop(0);
+});
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzi5a6Hp6T3hpsrd9mgdYkrAATywD2QLL42yFft4XrQg4IUPHFk63a2bswSwRWL5-3r/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent sucessfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      
+    </body>
+</html> 
