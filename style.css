@@ -243,6 +243,7 @@ width: 50%;
     overflow: hidden;
     border-radius: 10px;
     height: 300px !important;
+    width: 70em !important
 }
 .work-info{
     padding: 25px;
